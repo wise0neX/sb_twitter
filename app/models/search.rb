@@ -1,4 +1,4 @@
-require 'twitter_search'
+require './croaky-twitter-search-7523a39/lib/twitter_search.rb'
 
 @@client = TwitterSearch::Client.new 'smashing_boxes_demo'
 

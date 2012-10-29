@@ -2,5 +2,10 @@
 	<b>Posted <%= time_ago_in_words(tweet.created_at) %> ago</b>
 </p>
 <p>
-	<%= tweet.text %>
+	<img src = <%= tweet.profile_image_url %>
+		alt = <%= tweet.from_user%>
+		align = "left"
+		width = 32
+		height = 32
+	> <%= tweet.text %> <%= tweet.profile_image_url %>  </img>
 </p>

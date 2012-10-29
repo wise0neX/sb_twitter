@@ -20,7 +20,10 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.2'
-gem 'dancroak-twitter-search', :require => 'twitter_search'
+#gem 'dancroak-twitter-search',
+#	:require => 'twitter_search',
+#	:git => 'https://github.com/croaky/twitter-search.git',
+#	:branch => 'master'
 
 group :test do
   gem 'capybara', '1.1.2'

@@ -1,5 +1,5 @@
 Link to app:
-
+  http://stormy-falls-7519.herokuapp.com/
 
 About:
   Simple app to query Twitter. Type query and hit search.
