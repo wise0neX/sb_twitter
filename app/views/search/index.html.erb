@@ -1,0 +1,7 @@
+<h1>Search Twitter</h1>
+
+<%= render :partial => "search" %>
+
+<%= if @tweets
+	render :partial => "tweet", :collection => @tweets 
+end%>
