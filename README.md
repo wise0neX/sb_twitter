@@ -26,6 +26,8 @@ Bugs:
   caused by Rails 3 patch for IE. Might be fixed by using form_for instead of form_tag in view
 - "WARN Could not determine..." in server logs
   caused by Webrick gem bug. Dev says it doesn't break anything but he's working on a fix. Might be fixed by switching to Thin gem.
+- Some random browser issues
+  Sometimes profile pictures don't show up in Chrome. Might be a plug-in issue. Some notifications do not popup on Safari.
 
 
 Unsure:
