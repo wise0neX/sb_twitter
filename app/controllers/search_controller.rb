@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
 	def index
 
+		params[:search].strip!
 		@query =  params[:search]
 
 		if @query.to_s.length > 999
@@ -8,11 +9,14 @@ class SearchController < ApplicationController
 
 		elsif @query.to_s.blank?
 			params[:search] = nil
-			@tweets = nil
+			@tweets = :blank
 
 		else
-			@tweets = Search.search(@query)
-
+			begin
+				@tweets = Search.search(@query)
+			rescue
+				@tweets = :error
+			end
 		end
 	end
 end

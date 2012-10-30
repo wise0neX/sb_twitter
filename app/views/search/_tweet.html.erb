@@ -5,7 +5,13 @@
 	<img src = <%= tweet.profile_image_url %>
 		alt = <%= tweet.from_user%>
 		align = "left"
-		width = 32
-		height = 32
-	> <%= tweet.text %> <%= tweet.profile_image_url %>  </img>
+		width = 64
+		height = 64
+		hspace = 5
+		> 
+		<p><em> <%= tweet.from_user %> </em></p>
+		<p><%= tweet.text %></p>
+		<p></p>
+	</img>
 </p>
+<br>

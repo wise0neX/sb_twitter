@@ -7,14 +7,13 @@ About:
 
 Features:
 - Supports all Twitter search parameters
-  except 'nearby' which has to be geo-coded manually (I guess it's possible to do that using broswer location info, but it's not a terribly important feature)
-  also results are only as good as Twitter's which are limited to at most a week past
+  +except 'nearby' which has to be geo-coded manually (I guess it's possible to do that using broswer location info, but it's not a terribly important feature)
+  +also results are only as good as Twitter's which are limited to at most a week past
 - Attempt to make it pretty. Profile pics and some color
 - pagination
-- AJAX (no page refreshes)
+- AJAX (just for the time)
 - rspec and guard
-  test for invalid queries (too long, blank)
-  test for correct number of tweets displayed by view
+  test for invalid queries (too long, blank, exceptions)
   test for empty results page (try search for future tweet)
 
 

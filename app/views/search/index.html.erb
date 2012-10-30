@@ -2,6 +2,14 @@
 
 <%= render :partial => "search" %>
 
-<%= if @tweets
-	render :partial => "tweet", :collection => @tweets 
-end%>
+<%= if @tweets == :blank
+		render :partial => "err_blank_query"
+	elsif @tweets == :too_long
+		render :partial => "err_long_qery"
+	elsif @tweets == :error
+		render :partial => "err_exception_query"
+	elsif @tweets.empty?
+		render :partial => "empty_results"	
+	else
+		render :partial => "tweet", :collection => @tweets
+	end%>
