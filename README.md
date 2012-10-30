@@ -10,20 +10,15 @@ Features:
   +except 'nearby' which has to be geo-coded manually (I guess it's possible to do that using broswer location info, but it's not a terribly important feature)
   +also results are only as good as Twitter's which are limited to at most a week past
 - Attempt to make it pretty. Profile pics and some color
-- pagination
-- AJAX (just for the time)
 - rspec and guard
   test for invalid queries (too long, blank, exceptions)
   test for empty results page (try search for future tweet)
 
 
 Technical:
-- Main files:
-  + app/models/search.rb
-  + app/views/search/index.html.erb
-  + app/search_controller.rb
 - Twitter API accessed via 
   'twitter_search' gem (https://github.com/croaky/twitter-search)
+  + heroku couldn't load it so the installation file is included in the source
 
 
 Bugs:

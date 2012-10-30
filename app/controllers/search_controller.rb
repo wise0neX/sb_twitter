@@ -1,7 +1,7 @@
 class SearchController < ApplicationController
 	def index
 
-		params[:search].strip!
+		params[:search].to_s.strip!
 		@query =  params[:search]
 
 		if @query.to_s.length > 999
